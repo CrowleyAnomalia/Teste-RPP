@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-8224435856083102436
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: caracter
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 3506ad7577332b242a956fdc80dd3f93
+  m_Children:
+  - {fileID: -4401899423786367362}
+  m_Volume: 0259a06e7cdc33a4792153a2d6d0307f
+  m_Pitch: f7650dbb3bd85db4f96371410f126ce4
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -4616318507826791282}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-7148482001461075539
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 273eea070ccdc854fa5e6e7cd4b893ee
+  m_EffectName: Attenuation
+  m_MixLevel: 63c219e65bdface4a8498091085cad1d
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &-4616318507826791282
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: b80ed525d3664624e925bba719e6bb2b
+  m_EffectName: Attenuation
+  m_MixLevel: 6d342a5f53badc04ebff8e2b89829ff2
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-4401899423786367362
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footsteps
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 31057a0b5422954488934f97731f56be
+  m_Children: []
+  m_Volume: 2ce0d26c209608048a6b4111f17a9fc4
+  m_Pitch: 37880c0951db29a46b3d90d478337e79
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -7148482001461075539}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Audiomixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 4ad84d138082b0c4ab70c2b57da678f3
+    - 3506ad7577332b242a956fdc80dd3f93
+    - 31057a0b5422954488934f97731f56be
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4ad84d138082b0c4ab70c2b57da678f3
+  m_Children:
+  - {fileID: -8224435856083102436}
+  m_Volume: 89dd5d0e8f092a443afb5f211cca78ee
+  m_Pitch: e0521867dda0ce941a104ae79b3d9f57
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: f0b48e0f30ff0b34f8bfea8311afabeb
+  m_EffectName: Attenuation
+  m_MixLevel: 2c412c8b774c52d4193c154b510c108a
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: ec86cb525f999ec4fa9316db753debd4
+  m_FloatValues:
+    2ce0d26c209608048a6b4111f17a9fc4: 7
+  m_TransitionOverrides: {}
